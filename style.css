@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(to top left, #2a2a72, #2e2a68);
+    font-family: poppins;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 30px);
+    justify-content: center;
+    padding: 15px;
+}
+
+input {
+    background: #4C2885;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    color: #bbb;
+}
+
+.card {
+    margin-top: 20px;
+    background: #4C2885;
+    background: linear-gradient(to top left, #4c2885, #4c11ac);
+    padding: 60px;
+    display: flex;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 0px 5px rgba(255, 255, 255, 0.199);
+}
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px solid #2A2A72;
+    margin-right: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.repo {
+    display: inline-block;
+    background: #2a2a72;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.repo:hover {
+    background: #2a2a72;
+    opacity: 0.7;
+}
+
+@media (max-width: 760px){
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .user-info {
+        margin-top: 30px;
+    }
+
+    .user-info p {
+        text-align: justify;
+    }
+}
